@@ -65,27 +65,27 @@ void loop() {
   // falling = high (not pressed - voltage from pullup resistor)
   //           to low (pressed - button connects pin to ground)
   if (button0.fallingEdge()) {
-    Keyboard.set_key1(KEY_A);
+    Keyboard.set_media(KEY_MEDIA_PREV_TRACK);
     Keyboard.send_now();
   }
   if (button1.fallingEdge()) {
-    Keyboard.set_key1(KEY_S);
+    Keyboard.set_media(KEY_MEDIA_NEXT_TRACK);
     Keyboard.send_now();
   }
   if (button2.fallingEdge()) {
-    Keyboard.set_key1(KEY_D);
+    Keyboard.set_media(KEY_MEDIA_VOLUME_INC);
     Keyboard.send_now();
   }
   if (button3.fallingEdge()) {
-    Keyboard.set_key1(KEY_F);
+    Keyboard.set_media(KEY_MEDIA_PLAY_PAUSE);
     Keyboard.send_now();
   }
   if (button4.fallingEdge()) {
-    Keyboard.set_key1(KEY_Z);
+    Keyboard.set_media(KEY_MEDIA_STOP);
     Keyboard.send_now();
   }
   if (button5.fallingEdge()) {
-    Keyboard.set_key1(KEY_X);
+    Keyboard.set_media(KEY_MEDIA_VOLUME_DEC);
     Keyboard.send_now();
   }
   if (button6.fallingEdge()) {
@@ -116,19 +116,19 @@ void loop() {
     Keyboard.send_now();
   }
   if (button2.risingEdge()) {
-    Keyboard.set_key1(0);
+    Keyboard.set_media(0);
     Keyboard.send_now();
   }
   if (button3.risingEdge()) {
-    Keyboard.set_key1(0);
+    Keyboard.set_media(0);
     Keyboard.send_now();
   }
   if (button4.risingEdge()) {
-    Keyboard.set_key1(0);
+    Keyboard.set_media(0);
     Keyboard.send_now();
   }
   if (button5.risingEdge()) {
-    Keyboard.set_key1(0);
+    Keyboard.set_media(0);
     Keyboard.send_now();
   }
   if (button6.risingEdge()) {
